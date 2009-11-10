@@ -3,11 +3,11 @@ use Moose::Role;
 
 =head1 NAME
 
-Catalyst::Role::Messages - Easy way to stuff "status" messages into your stash
+CatalystX::MessageSmush - Easy way to stuff "status" messages into your stash
 
 =head1 VERSION
 
-version 0.01
+version 0.01.1
 
 =cut
 
@@ -15,7 +15,7 @@ version 0.01
 
     use Catalyst qw/
         ...
-    Catalyst::Role::Messages
+    +CatalystX::MessageSmush
     /;
 
     # later...
@@ -94,7 +94,7 @@ I dunno :-)
 
 # ABSTRACT: Add "status messages" to your app, easy like!
 
-our $VERSION = '0.01'; 
+our $VERSION = '0.01.1'; 
 sub msg {
     my ($c, $msg) = @_;
     $c->stash->{messages} ||= [];
