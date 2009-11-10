@@ -13,4 +13,4 @@ requires:
   Moose: "\"\""
   Moose::Role: "\"\""
   Test::Simple: 0.88
-version: 0.01.1
+version: 0.02

@@ -7,7 +7,7 @@ CatalystX::MessageSmush - Easy way to stuff "status" messages into your stash
 
 =head1 VERSION
 
-version 0.01.1
+version 0.02
 
 =cut
 
@@ -94,7 +94,7 @@ I dunno :-)
 
 # ABSTRACT: Add "status messages" to your app, easy like!
 
-our $VERSION = '0.01.1'; 
+our $VERSION = '0.02'; 
 sub msg {
     my ($c, $msg) = @_;
     $c->stash->{messages} ||= [];
